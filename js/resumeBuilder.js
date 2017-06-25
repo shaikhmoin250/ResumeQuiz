@@ -20,22 +20,22 @@ education["years"]="2005 to 2013"
 education["city"]="Mumbai";
 $("#main").prepend(work["position"]);
 $("#main").prepend(education.name);
-//var bio = {
-  //"name":"moin",
- //"role":"developer",
-//  "contact":{
-  //"Phone no.":"8767081018",
-// "email":"shaikhmoin250@gmail.com",
-  //"github":"shaikhmoin250",
-//  "location":"mumbai"
-//},
-  //"Welcome message":"lore apsum etc etc",
-  //"skills":["reading","writing","internet browsing","gaming"],
-//"biopic":"images/fry.jpg"
-//};
+var bio = {
+  "name":"moin",
+ "role":"developer",
+  "contact":{
+  "Phone no.":"8767081018",
+ "email":"shaikhmoin250@gmail.com",
+  "github":"shaikhmoin250",
+  "location":"mumbai"
+},
+  "Welcome message":"lore apsum etc etc",
+  "skills":["reading","writing","internet browsing","gaming"],
+"biopic":"images/fry.jpg"
+};
 
 //$("header").prepend(bio);
-//$("#main").append(JSON.stringify(bio));
+$("#main").append(JSON.stringify(bio));
 
 //var education={
   //"schools":[

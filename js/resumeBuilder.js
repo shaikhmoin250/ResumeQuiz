@@ -37,63 +37,63 @@ var bio = {
 //$("header").prepend(bio);
 $("#main").append(JSON.stringify(bio));
 
-//var education={
-  //"schools":[
-    //{
-      //"name":"Mumbai university",
-      //"location":"Mumabi India",
-      //"degree":"Masters",
-      //"majors":["CS"],
-      //"dates":2013,
-      //"url":"http//example.com"
-    //},
-    //{
-      //"name":"Gujrat university",
-      //"location":"Gujrat India",
-      //"degree":"Masters",
-      //"majors":["CS"],
-      //"dates":2016,
-      //"url":"http//example.com"
-  //  }
-//  ]
-//}
-//"online courses":[{
-  //"title":"Javascript Syntax",
-  //"school":"Udacity",
-  //"dates":"2017",
-  //"url":"http//udacity.com"
-//}]
-//}
+var education={
+  "schools":[
+    {
+      "name":"Mumbai university",
+      "location":"Mumabi India",
+      "degree":"Masters",
+      "majors":["CS"],
+      "dates":2013,
+      "url":"http//example.com"
+    },
+    {
+      "name":"Gujrat university",
+      "location":"Gujrat India",
+      "degree":"Masters",
+      "majors":["CS"],
+      "dates":2016,
+      "url":"http//example.com"
+    }
+  ],
+"online courses":[{
+  "title":"Javascript Syntax",
+  "school":"Udacity",
+  "dates":"2017",
+  "url":"http//udacity.com"
+}]
+}
 
-//var work={
-  //"jobs":[
-    //{
-      //"employeer":"Planet Express",
-    //  "title":"Delivery Boy",
-      //"dates":"January 3000-failure",
-      //"description":"lorem epsun dhfjd moebd svey aftde ahsu awfst eddhdh sjeids"
-    //},
-  //  {
-    //  "employeer":"Panucii,s Pizza",
-      //"title":"Delivery Boy",
-      //"dates":"1998 -December 31,1999",
-      //"description":"lorem epsun dhfjd moebd svey aftde ahsu awfst eddhdh sjeids"
-  //  }
-  //]
-//}
-//var projects={
-  //"projects":[
-  //{
-    //"title":"Sample Project 1",
-    //"dates":"2014",
-    //"Description":"Lorem epsum shsji ahsgg sftqtas.",
-    //images:[
-      //"http//husidp.com",
-      //"http//jdhd.in"
-    //]
-  //}
-//]
-//}
+
+var work={
+  "jobs":[
+    {
+      "employeer":"Planet Express",
+      "title":"Delivery Boy",
+      "dates":"January 3000-failure",
+      "description":"lorem epsun dhfjd moebd svey aftde ahsu awfst eddhdh sjeids"
+    },
+    {
+      "employeer":"Panucii,s Pizza",
+      "title":"Delivery Boy",
+      "dates":"1998 -December 31,1999",
+      "description":"lorem epsun dhfjd moebd svey aftde ahsu awfst eddhdh sjeids"
+    }
+  ]
+}
+var projects={
+  "projects":[
+  {
+    "title":"Sample Project 1",
+    "dates":"2014",
+    "Description":"Lorem epsum shsji ahsgg sftqtas.",
+    images:[
+      "http//husidp.com",
+      "http//jdhd.in"
+    ]
+  }
+]
+}
 
 //for(job in work.jobs){
 //  $("workExperience").append(HTMLworkStart);

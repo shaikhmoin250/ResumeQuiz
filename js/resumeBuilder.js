@@ -2,11 +2,11 @@ $("#main").append(["moin"]);
 var awesomeThoughts="i am moin and i am AWESOME!"
 var funThoughts= awesomeThoughts.replace("AWESOME!","FUN");
 $("#main").append(funThoughts);
-//var formattedName=HTMLheaderName.replace("%data%", "moin");
-//var role="Web Developer";
-//var formattedRole=HTMLheaderRole.replace("%data%", "Web Developer");
-//$("#header").prepend(formattedRole);
-//$("#header").prepend(formattedName);
+var formattedName=HTMLheaderName.replace("%data%", "moin");
+var role="Web Developer";
+var formattedRole=HTMLheaderRole.replace("%data%", "Web Developer");
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
 //var skills=["aewomeness", "reading", "internet browsing", "JS"]
 //$("#main").append(skills);
 //$("#main").append(skills[0]);

@@ -7,19 +7,19 @@ var role="Web Developer";
 var formattedRole=HTMLheaderRole.replace("%data%", "Web Developer");
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
-//var skills=["aewomeness", "reading", "internet browsing", "JS"]
-//$("#main").append(skills);
+var skills=["aewomeness", "reading", "internet browsing", "JS"]
+$("#main").append(skills);
 //$("#main").append(skills[0]);
-//var work={};
-//work.position="Course Developer";
-//work.employer="Samvid";
-//work.years= 0-1;
-//var education= {};
-//education["name"]="Mumbai University";
-//education["years"]="2005 to 2013"
-//education["city"]="Mumbai";
-//$("#main").append(work["position"]);
-//$("#main").append(education.name);
+var work={};
+work.position="Course Developer";
+work.employer="Samvid";
+work.years= 0-1;
+var education= {};
+education["name"]="Mumbai University";
+education["years"]="2005 to 2013"
+education["city"]="Mumbai";
+$("#main").prepend(work["position"]);
+$("#main").prepend(education.name);
 //var bio = {
   //"name":"moin",
  //"role":"developer",

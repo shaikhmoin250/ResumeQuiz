@@ -2,7 +2,7 @@ $("#main").append(["moin"]);
 var awesomeThoughts="i am moin and i am AWESOME!"
 var funThoughts= awesomeThoughts.replace("AWESOME!","FUN");
 $("#main").append(funThoughts);
-var formattedName=HTMLheaderName.replace("%data%", "moin");
+var formattedName=HTMLheaderName.replace("%data%", "moin shaikh");
 var role="Web Developer";
 var formattedRole=HTMLheaderRole.replace("%data%", "Web Developer");
 $("#header").prepend(formattedRole);
@@ -107,20 +107,20 @@ if(bio.skills.length>0){
   $("#skills").append(formattedSkill);
 }
 
-//for(job in work.jobs){
-//  $("#workExperience").append(HTMLworkStart);
-  //var formattedEmployer=HTMLworkEmployer.replace("%data%",work.jobs[job].employeer);
-  //var formattedTitle= HTMLworkTitle.replace("%data%",work.jobs[job].title);
-  //var formattedEmployerTitle=formattedEmployer + formattedTitle;
-  //$(".work-entry:last").append(
-  //formattedEmployerTitle);
-  //var formattedDate=HTMLworkDates.replace("%data%",work.jobs[job].dates);
-  //$(".work-entry:last").append(
-  //formattedDate);
-  //var formattedDescription=HTMLworkDescription.replace("%data%",work.jobs[job].description);
-  //$(".work-entry:last").append(
-  //formattedDescription);
-//}
+for(job in work.jobs){
+  $("#workExperience").append(HTMLworkStart);
+  var formattedEmployer=HTMLworkEmployer.replace("%data%",work.jobs[job].employeer);
+  var formattedTitle= HTMLworkTitle.replace("%data%",work.jobs[job].title);
+  var formattedEmployerTitle=formattedEmployer + formattedTitle;
+  $(".work-entry:last").append(
+  formattedEmployerTitle);
+  var formattedDate=HTMLworkDates.replace("%data%",work.jobs[job].dates);
+  $(".work-entry:last").append(
+  formattedDate);
+  var formattedDescription=HTMLworkDescription.replace("%data%",work.jobs[job].description);
+  $(".work-entry:last").append(
+  formattedDescription);
+}
    function displayWork(){
      for(job in work.jobs){
        $("#workExperience").append(HTMLworkStart);
@@ -139,3 +139,11 @@ if(bio.skills.length>0){
    }
 }
 displayWork();
+         function inName(name){
+         name=name.trim().split(" ");
+         console.log(name);
+         name[1]=name[1].toUpperCase();
+         name[0]=name[0].slice(0,1).toUpperCase()+name[0].slice(1).toLowerCase();
+         return name[0]+" "+name[1];
+           }
+        $('#main').prepend(internationalizeButton);

@@ -86,14 +86,16 @@ var projects={
   {
     "title":"Sample Project 1",
     "dates":"2014",
-    "Description":"Lorem epsum shsji ahsgg sftqtas.",
-    images:[
-      "http//husidp.com",
+    "Description":"Lorem epsum shsji ahsgg sftqtas."},
+    {
+      images:[
+     "http//husidp.com",
       "http//jdhd.in"
     ]
   }
-]
-}
+  ]
+  }
+
 
 if(bio.skills.length>0){
   $("#header").append(HTMLskillsStart);
@@ -147,3 +149,24 @@ displayWork();
          return name[0]+" "+name[1];
            }
         $('#main').prepend(internationalizeButton);
+
+        projects.display=function(){
+          for (projects in projects.projects){
+            $("#projects").append(HTMLprojectStart);
+            var formattedTitle=HTMLprojectTitle.replace("%data%",projects.projects[projects].title);
+            $(".projects-entry:last").append(formattedTitle);
+            var formattedDate=HTMLprojectDates.replace("%data%",projects.projects[projects].date);
+              $(".projects-entry:last").append(formattedDate);
+              var formattedDescription=HTMLprojectDescription.replace("%data%",projects.projects[projects].Description);
+                $(".projects-entry:last").append(formattedDescription);
+
+                if(projects.projects[projects].images.length>0)
+                {
+                  for (image in projects.projects[projects].images)
+                  {
+                    var formattedImage=HTMLprojectImage.replace("%data%",projects.projects[projects].images[images]);
+                    $(".projects-entry:last").append(formattedImage);
+                  }
+                }
+                }
+        }
